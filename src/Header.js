@@ -23,10 +23,10 @@ function Header(){
   </a>
 
   <div className="dropdown-menu  btn-warning" aria-labelledby="dropdownMenuLink">
-    <a className="dropdown-item  btn-success" href="#">Home</a>
- <a className="dropdown-item  btn-success" href="#">Projects</a>
-    <a className="dropdown-item  btn-success" href="#">About</a>
-    <a className="dropdown-item  btn-success" href="#">Contact</a>
+    <a className="dropdown-item  btn-success" href="/">Home</a>
+ <a className="dropdown-item  btn-success" href="/projects">Projects</a>
+    <a className="dropdown-item  btn-success" href="/about">About</a>
+    <a className="dropdown-item  btn-success" href="/contact">Contact</a>
   </div>
 </div>
 </div>
