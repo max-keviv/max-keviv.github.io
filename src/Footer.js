@@ -3,7 +3,7 @@ function Footer()
 {
     return(
         <div className="footer">
-            <p className="loveNote">Made With <span>❤️❤️❤️</span></p>
+            {/* <p className="loveNote">Made With <span>❤️❤️❤️</span></p> */}
         </div>
     )
 }

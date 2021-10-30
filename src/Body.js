@@ -1,12 +1,30 @@
 import "./Body.css";
-
+import './rocket.scss';
 function Body()
 {
     return(
-        <div className="container">
-        <div className="content">
-        <p className="name">Hy! I Am<br/>Vivek Vishal</p></div>
-        </div>
+        <div>
+    <div class="rocket">
+    <div class="rocket-body">
+      <div class="body"></div>
+      <div class="fin fin-left"></div>
+      <div class="fin fin-right"></div>
+      <div class="window"></div>
+    </div>
+    <div class="exhaust-flame"></div>
+    <ul class="exhaust-fumes">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      </ul>
+      </div>
+      </div>
     )
 }
 
