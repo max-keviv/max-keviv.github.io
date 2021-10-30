@@ -205,3 +205,11 @@ body {
     opacity: 0.7;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .exhaust-fumes li {
+    &:nth-child(9) {
+      display: none;
+    }
+  }
+}

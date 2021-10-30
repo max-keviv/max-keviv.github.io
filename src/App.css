@@ -17,7 +17,7 @@
     background: url("./image/background.png") center no-repeat fixed;
     background-size: cover;
     min-height: 110vh;
-    min-width: 50vh;
+    min-width: 5vh;
   }
 }
 
