@@ -22,8 +22,8 @@ a {
   .nav {
     display: none;
   }
-  .icon {
-    width: 20px;
+  span {
+    width: 100px;
   }
   .dropdown {
     text-align: left;
@@ -40,7 +40,7 @@ a {
   }
   .dropdown-menu {
     color: #ffc107;
-    background-color: rgba(145, 92, 182, 0.4);
+    background-color: #ffc107;
     padding: 1%;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;

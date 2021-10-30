@@ -1,0 +1,12 @@
+.loveNote {
+  color: white;
+  font-size: larger;
+  /* font-family: monsarac; */
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  margin-bottom: -50px;
+}

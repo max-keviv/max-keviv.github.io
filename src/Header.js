@@ -4,21 +4,21 @@ function Header(){
     return(
         <div className="header"><ul className="nav justify-content-end">
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#">Home</a>
+          <a className="nav-link glow-button" href="#"><h4>Home</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#">Projects</a>
+          <a className="nav-link glow-button" href="#"><h4>Projects</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#">About</a>
+          <a className="nav-link glow-button" href="#"><h4>About</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#">Contact</a>
+          <a className="nav-link glow-button" href="#"><h4>Contact</h4></a>
         </li>
       </ul>
       <div className="dropdown ">
   <a className="btn glow-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
- <span> &#9776;</span>
+ <span><h3>&#9776;</h3></span>
  
   </a>
 

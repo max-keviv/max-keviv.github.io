@@ -1,0 +1,232 @@
+// -----------------------------------------------------------------------------
+// Twinkle Animations
+// -----------------------------------------------------------------------------
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Twinkle Animations > Twinkle 1
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@-webkit-keyframes twinkle_one {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes twinkle_one {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes twinkle_one {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes twinkle_one {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Twinkle Animations > Twinkle 2
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@-webkit-keyframes twinkle_two {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes twinkle_two {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes twinkle_two {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes twinkle_two {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Twinkle Animations > Twinkle 3
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@-webkit-keyframes twinkle_three {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes twinkle_three {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes twinkle_three {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes twinkle_three {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.galaxy {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+
+  .star {
+    position: absolute;
+    background-color: white;
+  }
+
+  .star-type1 {
+    width: 1px;
+    height: 1px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 1px 1px white;
+    box-shadow: 0 0 1px 1px white;
+    -webkit-animation: twinkle_one 3s ease-in-out infinite;
+    -moz-animation: twinkle_one 3s ease-in-out infinite;
+    -o-animation: twinkle_one 3s ease-in-out infinite;
+    animation: twinkle_one 3s ease-in-out infinite;
+  }
+  .star-type2 {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px 1px white;
+    box-shadow: 0 0 2px 1px white;
+    -webkit-animation: twinkle_two 12s ease-in-out infinite;
+    -moz-animation: twinkle_two 12s ease-in-out infinite;
+    -o-animation: twinkle_two 12s ease-in-out infinite;
+    animation: twinkle_two 12s ease-in-out infinite;
+  }
+  .star-type3 {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px 0 white;
+    box-shadow: 0 0 2px 0 white;
+    -webkit-animation: twinkle_three 7s ease-in-out infinite;
+    -moz-animation: twinkle_three 7s ease-in-out infinite;
+    -o-animation: twinkle_three 7s ease-in-out infinite;
+    animation: twinkle_three 7s ease-in-out infinite;
+  }
+}
