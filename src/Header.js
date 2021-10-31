@@ -4,16 +4,16 @@ function Header(){
     return(
         <div className="header"><ul className="nav justify-content-end">
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#"><h4>Home</h4></a>
+          <a className="nav-link glow-button" href="/"><h4>Home</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#"><h4>Projects</h4></a>
+          <a className="nav-link glow-button" href="/projects"><h4>Projects</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#"><h4>About</h4></a>
+          <a className="nav-link glow-button" href="/about"><h4>About</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="#"><h4>Contact</h4></a>
+          <a className="nav-link glow-button" href="/contact"><h4>Contact</h4></a>
         </li>
       </ul>
       <div className="dropdown ">

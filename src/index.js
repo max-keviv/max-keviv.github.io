@@ -14,7 +14,7 @@ ReactDOM.render(
 <Switch>
 <Route path="/">
     <App /></Route>
-<Route path="/projects"><Projects /></Route>
+<Route path="/projects" exact component={() => <Projects  />} / >
 <Route path="/about"><About/></Route>
 <Route path="/contact"><Contact/></Route>
 </Switch>
