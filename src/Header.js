@@ -7,7 +7,7 @@ function Header(){
           <a className="nav-link glow-button" href="/"><h4>Home</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link glow-button" href="/projects"><h4>Projects</h4></a>
+          <a className="nav-link glow-button" href="/project"><h4>Projects</h4></a>
         </li>
         <li className="nav-item">
           <a className="nav-link glow-button" href="/about"><h4>About</h4></a>
@@ -24,7 +24,7 @@ function Header(){
 
   <div className="dropdown-menu  btn-warning" aria-labelledby="dropdownMenuLink">
     <a className="dropdown-item  btn-success" href="/">Home</a>
- <a className="dropdown-item  btn-success" href="/projects">Projects</a>
+ <a className="dropdown-item  btn-success" href="/project">Projects</a>
     <a className="dropdown-item  btn-success" href="/about">About</a>
     <a className="dropdown-item  btn-success" href="/contact">Contact</a>
   </div>

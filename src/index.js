@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+
+import { QueryParamProvider } from 'use-query-params';
 import reportWebVitals from './reportWebVitals';
+
+import { Router, Redirect, globalHistory } from '@reach/router';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import About from './About/About';
 import Contact from './Contact/Contact';
@@ -10,15 +14,15 @@ import Projects from './Projects/Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-  <BrowserRouter>
-<Switch>
-<Route path="/">
-    <App /></Route>
-<Route path="/projects" exact component={() => <Projects  />} / >
-<Route path="/about"><About/></Route>
-<Route path="/contact"><Contact/></Route>
-</Switch>
-</BrowserRouter>
+  <QueryParamProvider reachHistory={globalHistory}>
+  <Router primary={false}>
+    <App path="/"/>
+    <Projects  path="project"/>
+    <About path="about"/>
+    <Contact path="contact"/>
+</Router>
+
+</QueryParamProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

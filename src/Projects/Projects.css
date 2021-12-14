@@ -1,6 +1,37 @@
-.module {
-  all: unset;
+/* html {
+  overflow-y: scroll;
+  overflow-x: scroll;
+} */
+
+.project {
+  overflow: auto;
+  margin: 0%;
+  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
-html {
-  text-decoration: none;
+.row {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
+.card {
+  margin: 30px;
+  border: 1px solid black;
+  height: 36em;
+}
+
+/* @media only screen and (max-height: 680px) {
+  .card {
+    margin: em 0%;
+  }
+  .li {
+    margin: 25px;
+  }
+  .container {
+    padding: 0%;
+  }
+} */
+/* body {
+  position: absolute;
+} */
