@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Current portfolio keeps authored frontend assets in dist.
+!portfolio/dist/

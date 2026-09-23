@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve,sep} from 'node:path';
 import {createChatHandler} from './chat.mjs';
-const root=resolve(fileURLToPath(new URL('../dist/',import.meta.url))); 
+const root=resolve(fileURLToPath(new URL('../dist/',import.meta.url)));
 const profile=JSON.parse(await readFile(resolve(root,'profile.json'),'utf8'));
 const chat=createChatHandler(profile);
 const types={html:'text/html; charset=utf-8',css:'text/css',js:'text/javascript',mjs:'text/javascript',json:'application/json',pdf:'application/pdf'};
