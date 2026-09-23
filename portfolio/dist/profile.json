@@ -1,13 +1,14 @@
 {
   "name": "Vivek Vishal",
-  "summary": "Vivek is a software engineer who started at Juspay and moved into mobility with the team that became Namma Yatri. His work spans onboarding, reliable systems, and everyday transport experiences.",
+  "summary": "Vivek is a software engineer who started at Juspay and moved into mobility with the team that became Namma Yatri. His work spans onboarding, reliable systems, and everyday transport experiences. At Asha Health, he worked on healthcare AI agents and clinic automation.",
   "journey": [
     "Vivek started as an intern at Juspay in March 2022. As a core team member, he helped build the onboarding assistant, reducing onboarding time from two weeks to one week.",
     "After moving into a full-time role, he focused on developer productivity, system reliability, and improvements to existing systems.",
-    "He then moved to the mobility team that became Namma Yatri, working across rental and intercity rides, ticketing, parcel delivery, and bus experiences."
+    "He then moved to the mobility team that became Namma Yatri, working across rental and intercity rides, ticketing, parcel delivery, and bus experiences.",
+    "At Asha Health, he worked as a Software Engineer (IC4), with February–September 2026 listed in his résumé, building healthcare AI agents and clinic automation."
   ],
   "experience": [
-    "Asha Health — Vivek’s résumé also lists work in healthcare AI and clinic automation. He has not yet supplied a personal account of this chapter.",
+    "Asha Health — Software Engineer (IC4), February–September 2026 as listed in his résumé. Vivek built healthcare AI agents and clinic automation, including a voice-agent server and revenue analytics.",
     "Namma Yatri — Vivek worked on rental and intercity features, backend protocols, the open data dashboard, ticketing, parcel delivery, bus tracking, GPS tracking, and bus ticketing. He says he built the Google Maps metro booking integration from scratch, with Namma Yatri providing the booking service.",
     "Juspay — In his full-time role, Vivek worked on productivity, reliability, and system improvements.",
     "Juspay internship — Starting in March 2022, Vivek was a core member of the onboarding assistant team and helped build the overall system, reducing onboarding from two weeks to one. He also contributed to related projects."
@@ -15,7 +16,8 @@
   "achievements": [
     "Vivek helped cut onboarding time from two weeks to one as a core member of Juspay’s onboarding assistant team.",
     "He built the Google Maps metro booking integration from scratch, with Namma Yatri supplying the metro booking service.",
-    "He built the parcel delivery feature and contributed across rental, intercity, and bus experiences at Namma Yatri."
+    "He built the parcel delivery feature and contributed across rental, intercity, and bus experiences at Namma Yatri.",
+    "At Asha Health, Vivek built a voice AI agent server that handled 1,000+ customers per day for clinic front-desk automation."
   ],
   "projects": [
     "At Namma Yatri, Vivek worked across ride booking, ticketing, parcel delivery, and bus systems. Ask about one area to explore what he contributed."
@@ -41,8 +43,53 @@
     "ownerNarrative": "Vivek’s personal account supplied 2026-09-24; takes precedence over the résumé for Cortana’s story and the onboarding metric.",
     "repositoryReview": "Selected authored PRs and code diffs from nammayatri/nammayatri; not an exhaustive audit. ops-dashboard and ny-react-native returned 404 to unauthenticated GitHub API requests."
   },
-  "notes": "Use this curated profile, not a reconstruction of the full résumé. Start with 2–3 short sentences and one relevant example; expand only on request. Do not recite all features or metrics. The onboarding result is two weeks to one week. Do not infer sole ownership of team projects or turn repository-wide features into personal achievements. Public PRs provide evidence of contributions, not sole authorship. Keep Asha out of the default journey until Vivek supplies that chapter; if explicitly asked, give only the high-level résumé summary above. Current employment and availability are not established. The original résumé PDF remains available on explicit request.",
+  "notes": "Use this curated profile, not a reconstruction of the full résumé. Start with 2–3 short sentences and one relevant example; expand only on request. Do not recite all features or metrics. The onboarding result is two weeks to one week. Do not infer sole ownership of team projects or turn repository-wide features into personal achievements. Public PRs provide evidence of contributions, not sole authorship. Include Asha in the career journey; its details are authorized from the résumé. Give a short overview first and expand on the requested initiative. The Pipecat voice server used node-based conversation flows, not the separate ReAct loop. February–September 2026 are résumé dates, not proof of current employment. Current employment and availability are not established. The original résumé PDF remains available on explicit request.",
   "workDetails": [
+    {
+      "id": "asha-voice",
+      "keywords": [
+        "pipecat",
+        "voice agent",
+        "voice-agent",
+        "voice server"
+      ],
+      "answer": "At Asha Health, Vivek built a Pipecat voice-agent server using a node-based conversation flow engine. His résumé reports that it handled 1,000+ customers per day for clinic front-desk automation. This was separate from his ReAct clinic-operations agent.",
+      "source": "User-supplied résumé; Asha Health details explicitly authorized by Vivek on 2026-09-24"
+    },
+    {
+      "id": "asha-agents",
+      "keywords": [
+        "react agent",
+        "react loop",
+        "langgraph",
+        "native runtime",
+        "agent runtime",
+        "dispatch"
+      ],
+      "answer": "At Asha Health, Vivek architected a ReAct agent loop for clinic operations and designed dispatch across LangGraph and a native agent runtime. This was a separate initiative from the Pipecat voice server’s node-based conversation flow.",
+      "source": "User-supplied résumé; Asha Health details explicitly authorized by Vivek on 2026-09-24"
+    },
+    {
+      "id": "asha-analytics",
+      "keywords": [
+        "cqrs",
+        "revenue",
+        "analytics"
+      ],
+      "answer": "At Asha Health, Vivek built a CQRS Revenue & Analytics service for clinic operations.",
+      "source": "User-supplied résumé; Asha Health details explicitly authorized by Vivek on 2026-09-24"
+    },
+    {
+      "id": "asha-observability",
+      "keywords": [
+        "observability",
+        "logging",
+        "alerting",
+        "monitoring"
+      ],
+      "answer": "At Asha Health, Vivek improved metrics, logging, and alerting to help the team observe and operate its systems.",
+      "source": "User-supplied résumé; Asha Health details explicitly authorized by Vivek on 2026-09-24"
+    },
     {
       "id": "onboarding",
       "keywords": [

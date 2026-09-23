@@ -14,5 +14,13 @@ test('a metro booking question does not dump all achievements',()=>{
 });
 test('default journey stays within the supplied career chapters',()=>{
  const answer=answerFromProfile(profile,'Tell me his journey');
- assert.match(answer,/March 2022/);assert.match(answer,/Namma Yatri/);assert.doesNotMatch(answer,/Asha|CGPA|₹/);
+ assert.match(answer,/March 2022/);assert.match(answer,/Namma Yatri/);assert.match(answer,/Asha Health/);assert.doesNotMatch(answer,/CGPA|₹/);
+});
+
+test('Asha questions route to the requested initiative',()=>{
+ assert.match(answerFromProfile(profile,'What did he build at Asha Health?'),/healthcare AI/);
+ assert.match(answerFromProfile(profile,'Tell me about his Pipecat voice server'),/1,000/);
+ assert.match(answerFromProfile(profile,'What was the ReAct loop?'),/LangGraph/);
+ assert.match(answerFromProfile(profile,'What was his CQRS work?'),/Revenue & Analytics/);
+ assert.doesNotMatch(answerFromProfile(profile,'What was his CQRS work?'),/parcel|rental/);
 });
