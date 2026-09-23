@@ -72,7 +72,7 @@ async function ask(raw) {
       const a = document.createElement('a'); a.href = safeUrl(url); a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = label; el.append(document.createElement('br'), a);
     }
   }
-  busy = false; syncComposer(); status(!social && !hosted && !['resume','contact'].includes(selectTopic(question)) ? 'Cortana · Answering from Vivek’s résumé' : 'Cortana · What shall we explore next?'); speak(answer); return answer;
+  busy = false; syncComposer(); status(!social && !hosted && !['resume','contact'].includes(selectTopic(question)) ? 'Cortana · Answering from Vivek’s shared story' : 'Cortana · What shall we explore next?'); speak(answer); return answer;
 }
 function syncComposer() { $('.send').disabled = busy || !$('#question').value.trim(); $('#question').setAttribute('aria-busy', String(busy)); }
 $('#question').addEventListener('input', syncComposer);

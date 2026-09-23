@@ -8,7 +8,7 @@ export function socialReply(question) {
   return null;
 }
 export function withPersonality(answer, topic) {
-  const leads={journey:'Let’s rewind a little.',experience:'Here’s where Vivek has been putting his ideas to work.',achievements:'Let’s talk impact. These are a few highlights from his résumé.',skills:'His toolkit has range. Here’s the breakdown.',projects:'A couple of projects worth a closer look.',education:'Here’s where the foundations were laid.'};
+  const leads={journey:'Let’s rewind a little.',experience:'Here’s where Vivek has been putting his ideas to work.',achievements:'Let’s talk impact. Here’s a highlight from his story.',skills:'His toolkit has range. Here’s the breakdown.',projects:'A couple of projects worth a closer look.',education:'Here’s where the foundations were laid.'};
   return leads[topic] ? `${leads[topic]}\n\n${answer}` : answer;
 }
 // SpeechSynthesis does not expose gender; prefer known feminine English voices.

@@ -1,27 +1,24 @@
 {
   "name": "Vivek Vishal",
-  "summary": "Vivek Vishal is a software engineer focused on AI agents, distributed systems, real-time data pipelines, and backend architecture. His résumé lists 3+ years of full-time experience, or 4+ years including his internship, across healthcare, mobility, and payments. He has worked at Asha Health, Namma Yatri, and Juspay.",
+  "summary": "Vivek is a software engineer who started at Juspay and moved into mobility with the team that became Namma Yatri. His work spans onboarding, reliable systems, and everyday transport experiences.",
   "journey": [
-    "Vivek studied Information Technology at the National Institute of Science and Technology from August 2019 to May 2023, graduating with a B.Tech and an 8.2 CGPA.",
-    "He began at Juspay as a Software Engineer Intern in March 2022, moved into a Software Engineer role in May 2023, and joined Namma Yatri in February 2024.",
-    "His résumé lists a Software Engineer (IC4) role at Asha Health from February to September 2026, building healthcare AI agents and clinic automation."
+    "Vivek started as an intern at Juspay in March 2022. As a core team member, he helped build the onboarding assistant, reducing onboarding time from two weeks to one week.",
+    "After moving into a full-time role, he focused on developer productivity, system reliability, and improvements to existing systems.",
+    "He then moved to the mobility team that became Namma Yatri, working across rental and intercity rides, ticketing, parcel delivery, and bus experiences."
   ],
   "experience": [
-    "Asha Health — Software Engineer (IC4), February–September 2026. Vivek architected a ReAct agent loop for clinic operations, designed dispatch across LangGraph and a native agent runtime, and built a Pipecat voice-agent server with a node-based conversation flow engine handling 1,000+ customers per day. He also built a CQRS Revenue & Analytics service and improved metrics, logging, and alerting.",
-    "Namma Yatri (Juspay) — Software Development Engineer, February 2024–January 2026. Vivek built ETA prediction, Kafka and ClickHouse telemetry pipelines, route-deviation alerts, and the Where is My Bus platform. He integrated metro ticketing into Google Maps and delivered rental, intercity, refund, and cancellation flows.",
-    "Juspay — Software Engineer, May 2023–February 2024. He designed key-value infrastructure handling 3,000 peak requests per second and an internal workflow DSL that reduced developer effort by 66%.",
-    "Juspay — Software Engineer Intern, March 2022–April 2023. He automated merchant onboarding, reducing it from four weeks to two, and built analytics dashboards for merchant success teams."
+    "Asha Health — Vivek’s résumé also lists work in healthcare AI and clinic automation. He has not yet supplied a personal account of this chapter.",
+    "Namma Yatri — Vivek worked on rental and intercity features, backend protocols, the open data dashboard, ticketing, parcel delivery, bus tracking, GPS tracking, and bus ticketing. He says he built the Google Maps metro booking integration from scratch, with Namma Yatri providing the booking service.",
+    "Juspay — In his full-time role, Vivek worked on productivity, reliability, and system improvements.",
+    "Juspay internship — Starting in March 2022, Vivek was a core member of the onboarding assistant team and helped build the overall system, reducing onboarding from two weeks to one. He also contributed to related projects."
   ],
   "achievements": [
-    "At Asha Health, Vivek built a voice AI agent server that handled 1,000+ customers per day for clinic front-desk automation.",
-    "At Namma Yatri, caching and query optimization reduced Maps API costs by ₹50,000 per day, with cost per ride falling from ₹3 to ₹2.50. Metro ticketing integration enabled 5,000+ monthly bookings.",
-    "His Namma Yatri work reduced incident response time by 30%, improved bus operational efficiency by 25%, increased completed rides by 5%, and reduced support tickets by 10%.",
-    "At Juspay, his workflow DSL reduced developer effort by 66%, and merchant onboarding automation halved onboarding time from four weeks to two.",
-    "At Namma Yatri, Vivek’s ETA prediction system combined historical and real-time GPS data, achieving 80% accuracy within five minutes, as stated in his résumé. Kafka and ClickHouse pipelines enabled sub-second operational dashboards."
+    "Vivek helped cut onboarding time from two weeks to one as a core member of Juspay’s onboarding assistant team.",
+    "He built the Google Maps metro booking integration from scratch, with Namma Yatri supplying the metro booking service.",
+    "He built the parcel delivery feature and contributed across rental, intercity, and bus experiences at Namma Yatri."
   ],
   "projects": [
-    "Multi-Objective Surveillance System — An object-tracking research project using YOLO, DeepSort, and Kalman filtering. His résumé reports 50% accuracy in research simulations.",
-    "Humanitarian OpenStreetMap — Open-source geospatial mapping contributions using Flask and React, supporting community-driven humanitarian initiatives."
+    "At Namma Yatri, Vivek worked across ride booking, ticketing, parcel delivery, and bus systems. Ask about one area to explore what he contributed."
   ],
   "skills": [
     "Languages: Java, C++, Rust, Go, Python, TypeScript, SQL, and C. Frontend: React, React Native, JavaScript, and Webpack.",
@@ -40,7 +37,95 @@
   "githubUrl": "https://github.com/max-keviv",
   "sources": {
     "resume": "Vivek_vishal_resume.pdf supplied by Vivek; imported 2026-09-24",
-    "linkedin": "https://www.linkedin.com/in/vishal-vivek/"
+    "linkedin": "https://www.linkedin.com/in/vishal-vivek/",
+    "ownerNarrative": "Vivek’s personal account supplied 2026-09-24; takes precedence over the résumé for Cortana’s story and the onboarding metric.",
+    "repositoryReview": "Selected authored PRs and code diffs from nammayatri/nammayatri; not an exhaustive audit. ops-dashboard and ny-react-native returned 404 to unauthenticated GitHub API requests."
   },
-  "notes": "Employment dates and metrics are from the supplied résumé, not independently audited. Asha Health YC batch omitted because résumé and LinkedIn disagree. Current availability and present employment status are not established."
+  "notes": "Use this curated profile, not a reconstruction of the full résumé. Start with 2–3 short sentences and one relevant example; expand only on request. Do not recite all features or metrics. The onboarding result is two weeks to one week. Do not infer sole ownership of team projects or turn repository-wide features into personal achievements. Public PRs provide evidence of contributions, not sole authorship. Keep Asha out of the default journey until Vivek supplies that chapter; if explicitly asked, give only the high-level résumé summary above. Current employment and availability are not established. The original résumé PDF remains available on explicit request.",
+  "workDetails": [
+    {
+      "id": "onboarding",
+      "keywords": [
+        "onboarding",
+        "intern"
+      ],
+      "answer": "Vivek started at Juspay as an intern in March 2022. He was a core member of the team building the onboarding assistant, helping reduce onboarding time from two weeks to one week. He also worked on related projects.",
+      "source": "Vivek’s own account"
+    },
+    {
+      "id": "productivity",
+      "keywords": [
+        "productivity",
+        "reliability"
+      ],
+      "answer": "After becoming a full-time engineer at Juspay, Vivek focused on productivity, reliability, and improving the existing systems. He hasn’t shared a deeper technical account of that phase yet.",
+      "source": "Vivek’s own account"
+    },
+    {
+      "id": "metro",
+      "keywords": [
+        "metro",
+        "google map"
+      ],
+      "answer": "Vivek built the Google Maps metro booking integration from scratch. Namma Yatri provided the metro booking service behind that flow.",
+      "source": "Vivek’s own account; implementation not independently verified in this repository review"
+    },
+    {
+      "id": "rental",
+      "keywords": [
+        "rental",
+        "intercity"
+      ],
+      "answer": "Vivek worked on rental and intercity experiences. His merged contributions include customer OTP booking flows and updates connecting booking, driver information, and ride tracking.",
+      "source": "Vivek’s own account and merged PR #8187",
+      "url": "https://github.com/nammayatri/nammayatri/pull/8187"
+    },
+    {
+      "id": "parcel",
+      "keywords": [
+        "parcel",
+        "delivery"
+      ],
+      "answer": "Vivek built the parcel delivery feature. His public contributions include the parcel delivery flow and follow-up fixes to the customer’s driver-offer waiting experience.",
+      "source": "Vivek’s own account and merged PRs #8707 and #9584",
+      "url": "https://github.com/nammayatri/nammayatri/pull/8707"
+    },
+    {
+      "id": "bus",
+      "keywords": [
+        "bus",
+        "gps"
+      ],
+      "answer": "Vivek worked on bus tracking, GPS tracking, and bus ticketing flows. His merged bus contributions include Android location updates, notifications, and driver-side flow changes.",
+      "source": "Vivek’s own account and merged PR #9880",
+      "url": "https://github.com/nammayatri/nammayatri/pull/9880"
+    },
+    {
+      "id": "open-data",
+      "keywords": [
+        "open data",
+        "open-data"
+      ],
+      "answer": "Vivek worked on Namma Yatri’s open data dashboard. He hasn’t yet shared the exact scope of that work, and the repository review did not establish those details.",
+      "source": "Vivek’s own account"
+    },
+    {
+      "id": "ticketing",
+      "keywords": [
+        "ticket",
+        "refund"
+      ],
+      "answer": "Vivek worked on ticketing systems, including booking cancellations and refunds. His merged dashboard work also covers booking creation, booking status and lists, and cash collection.",
+      "source": "Vivek’s own account and merged PRs #6789 and #12400",
+      "url": "https://github.com/nammayatri/nammayatri/pull/12400"
+    },
+    {
+      "id": "protocols",
+      "keywords": [
+        "protocol"
+      ],
+      "answer": "Vivek worked on backend protocols at Namma Yatri. He hasn’t yet shared which protocol changes he wants to highlight.",
+      "source": "Vivek’s own account"
+    }
+  ]
 }
