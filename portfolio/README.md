@@ -21,3 +21,5 @@ Speech recognition and speech synthesis remain browser services. English feminin
 `npm run build` creates `dist/server/index.js`, a standalone Cloudflare Worker containing only explicit public assets plus the chat handler. `.env` is never bundled. `.openai/hosting.json` identifies the existing Sites project. Production requires `GROQ_API_KEY` as a secret and optional `GROQ_MODEL`, followed by a deployment. Build outputs and deployment archives are ignored.
 
 Throttling is best-effort per Worker isolate (10 requests/minute/client IP); it is not a distributed spending cap. The provider's free-plan quota is the hard limit. Requests are limited to 12 KB, questions to 1,200 characters, history to six messages, and provider calls to 18 seconds. Provider errors and secrets are never sent to visitors. Additional edge abuse protection is recommended if public traffic grows.
+
+Speech replies use short sentence turns, brief pauses, and subtle changes in pace and pitch. Expressiveness depends on the visitor’s installed browser voice; this is not an emotional neural speech model. Muting, ending voice, or starting a new reply cancels pending speech.

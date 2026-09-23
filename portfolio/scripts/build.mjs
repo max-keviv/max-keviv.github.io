@@ -1,5 +1,5 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
-const names=['index.html','style.css','app.js','knowledge.mjs','persona.mjs','profile.json','Vivek_Vishal_Resume.pdf'];
+const names=['index.html','style.css','app.js','knowledge.mjs','persona.mjs','speech.mjs','profile.json','Vivek_Vishal_Resume.pdf'];
 const types={html:'text/html; charset=utf-8',css:'text/css',js:'text/javascript',mjs:'text/javascript',json:'application/json',pdf:'application/pdf'};
 const assets={};for(const name of names)assets['/'+name]={type:types[name.split('.').pop()],data:(await readFile('dist/'+name)).toString('base64')};
 const profile=JSON.parse(await readFile('dist/profile.json','utf8'));

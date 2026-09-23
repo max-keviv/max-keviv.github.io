@@ -1,9 +1,9 @@
-export const greeting = "Hi, I’m Cortana. I’m the AI companion for Vivek’s corner of the internet. Curious about his work, his journey, or the person behind the code? Pick a thread. I’ll follow.";
+export const greeting = "Hey, I’m Cortana. Nice to meet you! Want to hear what Vivek’s been building, or how he got here?";
 export function socialReply(question) {
   const q = question.toLowerCase().trim();
   if (/^(hi|hello|hey|hi cortana|hello cortana|hey cortana)[!.\s]*$/.test(q) || /who are you|your name|introduce yourself|what are you/.test(q)) return greeting;
-  if (/^(thanks|thank you|thank you cortana|thanks cortana)[!.\s]*$/.test(q)) return 'Anytime. Curiosity looks good on you. What else shall we explore?';
-  if (/how are you|how's it going/.test(q)) return 'Ready for a good question. My specialty? Connecting the dots in Vivek’s story. Where shall we start?';
+  if (/^(thanks|thank you|thank you cortana|thanks cortana)[!.\s]*$/.test(q)) return 'You’re welcome! Happy to help.';
+  if (/how are you|how's it going/.test(q)) return 'I’m here and ready to chat! What brings you to Vivek’s corner of the internet?';
   if (/are you (the real|microsoft)|are you from microsoft/.test(q)) return 'I’m Cortana, Vivek’s custom AI companion here—not Microsoft’s assistant. Same name, a different mission: helping you get to know Vivek.';
   return null;
 }

@@ -1,10 +1,12 @@
+import { createSpeaker } from './speech.mjs';
 import { greeting, socialReply, withPersonality, preferredVoice } from './persona.mjs';
 import { answerFromProfile, selectTopic } from './knowledge.mjs';
 const $ = s => document.querySelector(s);
 let profile = null, busy = false, voiceOn = false, soundOn = false, recognition = null, listening = false, speaking = false, generation = 0;
 const history = [];
-let activeUtterance = null, chatAbort = null;
-function cancelSpeech() { if (activeUtterance) { activeUtterance.onend = null; activeUtterance.onerror = null; activeUtterance = null; } window.speechSynthesis?.cancel(); }
+let chatAbort = null;
+const speaker = window.speechSynthesis ? createSpeaker({synth: window.speechSynthesis, makeUtterance: text => new SpeechSynthesisUtterance(text), getVoice: () => preferredVoice(window.speechSynthesis.getVoices()) || automaticVoice}) : null;
+function cancelSpeech() { speaker?.cancel(); }
 let automaticVoice = null;
 function refreshVoices() { automaticVoice = preferredVoice(window.speechSynthesis?.getVoices() || []); }
 refreshVoices();
@@ -39,13 +41,10 @@ function stopVoice() { voiceOn = false; listening = false; speaking = false; if 
 function speak(text) {
   if (!soundOn || !window.speechSynthesis) { if (voiceOn) listen(); return; }
   cancelSpeech(); speaking = true; document.body.classList.add('speaking'); status('Speaking…');
-  const utterance = new SpeechSynthesisUtterance(text); activeUtterance = utterance;
-  const voices = window.speechSynthesis.getVoices();
-  const selected = preferredVoice(voices) || automaticVoice;
-  if (selected) { utterance.voice = selected; utterance.lang = selected.lang; } else utterance.lang = 'en-US';
-  utterance.rate = 0.98; utterance.pitch = 1.03;
-  const done = () => { speaking = false; document.body.classList.remove('speaking'); status('What else would you like to know?'); if (voiceOn) listen(); };
-  utterance.onend = done; utterance.onerror = () => { stopVoice(); status('Spoken replies are unavailable. Your answer is above.'); }; window.speechSynthesis.speak(utterance);
+  speaker.speak(text, {
+    onDone: () => { speaking = false; document.body.classList.remove('speaking'); status('What else would you like to know?'); if (voiceOn) listen(); },
+    onError: () => { stopVoice(); status('Spoken replies are unavailable. Your answer is above.'); }
+  });
 }
 async function ask(raw) {
   const question = String(raw).trim().slice(0,1200); if (!question || busy) return;
