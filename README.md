@@ -1,73 +1,23 @@
-# Welcome to your Lovable project
+# Vivek Vishal’s portfolio
 
-## Project info
+Share: **https://max-keviv.github.io/**
 
-**URL**: https://lovable.dev/projects/f4710ec6-75ad-42c2-bcd0-67f41ba9b93f
+The root `index.html` redirects visitors to the live Cortana portfolio:
+https://vivek-voice-portfolio.entrupreneur-vivek.chatgpt.site/
 
-## How can I edit this code?
+## Current application
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/f4710ec6-75ad-42c2-bcd0-67f41ba9b93f) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+The complete voice portfolio, hosted AI backend, build script, résumé, and tests are in [`portfolio/`](portfolio/README.md).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+cd portfolio
+cp .env.example .env
+# Set GROQ_API_KEY in .env, then:
+npm start
 ```
 
-**Edit a file directly in GitHub**
+Requires Node.js 24+. Run `npm test` to check the backend and `npm run build` to create the Worker deployment artifact. Never commit `.env` or API keys.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+GitHub Pages serves the redirect. The live application and its server-side Groq secret are hosted separately; pushing this repository does not redeploy that backend.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f4710ec6-75ad-42c2-bcd0-67f41ba9b93f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The previous portfolio’s source remains in the root `src/` and `public/` directories for reference.
